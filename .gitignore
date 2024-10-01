@@ -1,0 +1,8 @@
+**/dist
+**/__pycache__
+**/.antlr
+**/.idea
+**/venv
+**/.vscode
+node_modules/
+.env
