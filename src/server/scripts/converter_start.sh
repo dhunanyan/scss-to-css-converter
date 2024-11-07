@@ -1,1 +1,0 @@
-python ./controllers/main.py

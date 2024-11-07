@@ -2,6 +2,8 @@
 
 Welcome to the **SCSS to CSS Converter**! This project is a lightweight, user-friendly tool designed to make converting SCSS (Sassy CSS) code to CSS (Cascading Style Sheets) simple and accessible. With this converter, you can work with SCSS syntax and quickly generate the final CSS code for easy deployment and browser compatibility.
 
+![Logo](./docs/scss-to-css-converter.png)
+
 ## 📖 About
 
 CSS preprocessors like SCSS allow for more flexible, modular, and maintainable styling by providing features such as variables, nested rules, and mixins. However, the final output for browsers needs to be in plain CSS. This converter bridges that gap, helping you transition smoothly from SCSS to CSS.
