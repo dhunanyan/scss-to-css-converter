@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.scss-block {
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  margin: 0 0 72px 0;
+  overflow: hidden;
+  width: 100%;
+
+  @media (min-width: 900px) {
+    margin: 0 20px 0 0;
+  }
+
+  &__header {
+    align-items: center;
+    background-color: #cc6699;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    padding: 7px 14px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px;
+  }
+
+  &__editor {
+    height: 400px;
+    * {
+      text-wrap: wrap !important;
+    }
+
+    .monaco-editor,
+    .monaco-editor .margin,
+    .monaco-editor-background,
+    .minimap-decorations-layer,
+    .presentation {
+      background-color: $primary-color !important;
+    }
+
+    .slider {
+      background-color: $tint-color-1 !important;
+      cursor: pointer;
+    }
+
+    .view-lines {
+      border-color: $tint-color-1 !important;
+    }
+  }
+}

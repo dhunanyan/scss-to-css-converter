@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.spinner {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.75);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 160px;
+  z-index: 9;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0 0 0 20px;
+  }
+
+  &__inner {
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    animation: spin 1s linear infinite;
+    border: 10px solid #569cd6;
+    border-top: 10px solid #cc6699;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+}

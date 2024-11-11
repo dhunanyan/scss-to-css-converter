@@ -1,7 +1,0 @@
-const PostsTypes = {
-  SEND_CSS_START: "FETCH_POSTS_START",
-  SEND_CSS_SUCCESS: "SEND_CSS_SUCCESS",
-  SEND_CSS_FAILURE: "SEND_CSS_FAILURE",
-};
-
-export default PostsTypes;
