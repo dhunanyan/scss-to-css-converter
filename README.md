@@ -1,6 +1,4 @@
-# SCSS to CSS Converter - Client
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a5a340c0-bf4b-4cb3-81f9-4ed53538ba36/deploy-status)](https://app.netlify.com/sites/scss-to-css-converter/deploys)
+# SCSS to CSS Converter - Client [![Netlify Status](https://api.netlify.com/api/v1/badges/a5a340c0-bf4b-4cb3-81f9-4ed53538ba36/deploy-status)](https://app.netlify.com/sites/scss-to-css-converter/deploys)
 
 Welcome to the **SCSS to CSS Converter - Client**! This project is a lightweight, user-friendly tool designed to make converting SCSS (Sassy CSS) code to CSS (Cascading Style Sheets) simple and accessible. With this converter, you can work with SCSS syntax and quickly generate the final CSS code for easy deployment and browser compatibility.
 

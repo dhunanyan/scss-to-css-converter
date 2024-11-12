@@ -28,16 +28,6 @@ export const Blocks = () => {
   return (
     <div className="blocks">
       <div className="blocks__container">
-        {/* {errorMessage && showErrorPopup && (
-            <ErrorPopup
-              errorMessage={errorMessage.message}
-              name={errorMessage.name}
-              closePopup={() => {
-                setShowErrorPopup(false);
-              }}
-            />
-          )}
-          {isLoading && <Spinner />} */}
         <ScssBlock code={SCSS} onChange={handleChange} />
         <button
           className="blocks__button blocks__button--alternative"
