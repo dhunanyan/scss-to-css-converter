@@ -8,7 +8,7 @@ Thank you for your interest in contributing to the SCSS to CSS Converter - Clien
 2. **Clone your forked repository**: Use the following command to clone the repository locally:
 
    ```bash
-   git clone https://github.com/dhunanyan/spotify-clone.git
+   git clone https://github.com/dhunanyan/scss-to-css-converter.git
    cd spotify-clone
    ```
 
@@ -17,10 +17,6 @@ Thank you for your interest in contributing to the SCSS to CSS Converter - Clien
 ```bash
   yarn install
   yarn dev
-
-  # for platform specific run
-  yarn dev:android # Runs on Adroid device on expo go app or simulator
-  yarn dev:ios # Runs on iOS device on expo go app or simulator
 ```
 
 3.1. For real devices just scan the QR code from terminal on your phone, after you have installed and configured Expo-go.
