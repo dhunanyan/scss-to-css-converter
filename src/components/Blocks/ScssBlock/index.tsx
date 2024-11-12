@@ -12,7 +12,7 @@ export type ScssBlockPropsType = {
 export const ScssBlock = ({ code, onChange }: ScssBlockPropsType) => (
   <div className="scss-block">
     <div className="scss-block__header">
-      <h3 className="scss-block__title">SCSS code</h3>
+      <h3 className="scss-block__title">SCSS</h3>
     </div>
     <div className="scss-block__editor">
       <Editor
@@ -23,6 +23,7 @@ export const ScssBlock = ({ code, onChange }: ScssBlockPropsType) => (
         defaultValue=""
         value={code}
         onChange={(value) => onChange(value)}
+        loading
       />
     </div>
   </div>

@@ -39,10 +39,22 @@ export const Blocks = () => {
           )}
           {isLoading && <Spinner />} */}
         <ScssBlock code={SCSS} onChange={handleChange} />
+        <button
+          className="blocks__button blocks__button--alternative"
+          onClick={() => {
+            handleClick();
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: 'smooth',
+            });
+          }}
+        >
+          CONVERT
+        </button>
         <CssBlock code={CSS} />
       </div>
       <button className="blocks__button" onClick={handleClick}>
-        Convert
+        CONVERT
       </button>
     </div>
   );

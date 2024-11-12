@@ -33,7 +33,7 @@ export const CssBlock = ({ code }: CssBlockPropsType) => {
   return (
     <div className="css-block">
       <div className="css-block__header">
-        <h3 className="css-block__title">CSS code</h3>
+        <h3 className="css-block__title">CSS</h3>
         <button onClick={handleCopy} className="css-block__button">
           {isClicked ? <FaCheck /> : <IoCopy />}
         </button>
