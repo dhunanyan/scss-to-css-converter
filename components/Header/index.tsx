@@ -10,7 +10,7 @@ export const Header = () => {
 
   return (
     <header className="header">
-      <div className="header__container container">
+      <div className="header__container">
         <div className="header__logo">
           <span className="header__logo-icon" aria-label={brand.logoAlt}>
             <Icons.Logo size={40} />

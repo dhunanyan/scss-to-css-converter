@@ -13,8 +13,9 @@
     display: flex;
     justify-content: space-between;
     min-height: 72px;
-    padding-bottom: 14px;
-    padding-top: 14px;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 14px 30px;
   }
 
   &__logo {
