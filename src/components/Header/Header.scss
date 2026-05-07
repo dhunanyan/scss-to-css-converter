@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.header {
+  backdrop-filter: blur(10px);
+  background: rgba(1, 22, 39, 0.7);
+  border-bottom: 1px solid rgba(204, 102, 153, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 72px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
+
+  &__brand {
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  &__logo {
+    border-radius: 10px;
+    display: block;
+    height: 36px;
+    width: 36px;
+  }
+
+  &__title {
+    color: $secondary-color;
+    font-family: $font-sans;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+
+    @media screen and (min-width: 768px) {
+      gap: 12px;
+    }
+  }
+
+  &__link {
+    border: 1px solid rgba(86, 156, 214, 0.35);
+    border-radius: 999px;
+    color: $secondary-color;
+    font-family: $font-mono;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    padding: 7px 10px;
+    text-decoration: none;
+    transition: all 120ms ease;
+
+    &:hover {
+      background: rgba(86, 156, 214, 0.16);
+      border-color: rgba(86, 156, 214, 0.75);
+      color: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+}

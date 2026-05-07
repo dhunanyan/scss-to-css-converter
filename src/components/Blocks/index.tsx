@@ -39,12 +39,12 @@ export const Blocks = () => {
             });
           }}
         >
-          CONVERT
+          Convert
         </button>
         <CssBlock code={CSS} />
       </div>
       <button className="blocks__button" onClick={handleClick}>
-        CONVERT
+        Convert
       </button>
     </div>
   );

@@ -4,17 +4,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 .container {
-  max-width: 1040px;
   margin: 0 auto;
+  max-width: 1040px;
   padding: 60px 30px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  background: $primary-color;
+  font-size: 14px;
+  height: 100%;
+  line-height: 1;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+}
+
+body {
   -moz-osx-font-smoothing: grayscale;
-  // color: var(--foreground);
-  background: linear-gradient(90deg, #cc6699, #569cd6);
+  -webkit-font-smoothing: antialiased;
+  background: radial-gradient(
+      circle at top left,
+      rgba(204, 102, 153, 0.28),
+      transparent 46%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(86, 156, 214, 0.28),
+      transparent 44%
+    ),
+    linear-gradient(125deg, #071c30 0%, #011627 38%, #0b253b 100%);
+  color: $secondary-color;
   font-family: 'Poppins', sans-serif;
 
   &::-webkit-scrollbar {
@@ -34,125 +60,21 @@ body {
     background-color: $secondary-color;
     color: $tint-color-1;
   }
+}
 
-  &:focus,
-  &:active {
-    outline: none;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  button,
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  input,
-  body,
-  html,
-  header,
-  section,
-  main,
-  span,
-  ol,
-  ul,
-  li,
-  blockquote,
-  pre {
-    padding: 0;
-    margin: 0;
-    border: 0;
-
-    &:before,
-    &:after {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-    &:focus,
-    &:active {
-      outline: none;
-    }
-    &:visited {
-      text-d &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-  nav,
-  footer,
-  header,
-  aside {
-    display: block;
-  }
-
-  input,
-  button,
-  textarea {
-    font-family: inherit;
-  }
-
-  input {
-    &::-ms-clear {
-      display: none;
-    }
-    &[type='file'] {
-      display: none;
-    }
-  }
-
-  button {
-    cursor: pointer;
-
-    &::-moz-focus-inner {
-      padding: 0;
-      border: 0;
-    }
-  }
-
-  ul li,
-  ol li {
-    list-style: none;
-  }
-
-  img {
-    vertical-align: top;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: inherit;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-  }
+button,
+input,
+textarea {
+  font-family: inherit;
 }
 
 code {
+  color: rgb(161, 242, 187);
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  color: rgb(161, 242, 187);
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }

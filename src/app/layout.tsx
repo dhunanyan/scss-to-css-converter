@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
 import { HtmlMetaData } from '@data';
+import { Header } from '@components';
 
 import './globals.scss';
 
-export const metadata: Metadata = HtmlMetaData['index'];
-
-export type RootLayoutPropsType = {
-  children: React.JSX.Element;
+export const metadata: Metadata = {
+  ...HtmlMetaData['index'],
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -16,15 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <link rel="icon" type="image/ico" sizes="32x32" href="/favicon.ico" />
-        <meta name="theme-color" content="#0a192f" />
-      </head>
       <body>
-        <header></header>
+        <Header />
         {children}
-        <footer></footer>
       </body>
     </html>
   );

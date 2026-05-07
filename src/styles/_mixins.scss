@@ -41,7 +41,8 @@
     border: 1px solid $secondary-color;
     box-shadow: 0px 2px 5px 0px $tint-color-1;
     color: $secondary-color;
-    transform: translate(10px, 0);
+    cursor: pointer;
+    transform: translate(0, -2px);
   }
 
   @media screen and (min-width: 425px) {
