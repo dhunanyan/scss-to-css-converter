@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   images: {
-    domains: ['images.ctfassets.net'],
+    remotePatterns: [{ protocol: 'https', hostname: 'images.ctfassets.net' }],
   },
   compiler: {
     styledComponents: true,
@@ -14,14 +14,8 @@ module.exports = {
       use: 'raw-loader',
     });
 
-    // Prevent warnings related to canvas
     config.resolve.alias.canvas = false;
-
-    // Add pdfjs-dist worker
-    config.resolve.alias['pdfjs-dist'] = path.join(
-      __dirname,
-      'node_modules/pdfjs-dist'
-    );
+    config.resolve.alias['pdfjs-dist'] = path.join(__dirname, 'node_modules/pdfjs-dist');
 
     return config;
   },
