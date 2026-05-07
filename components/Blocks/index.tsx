@@ -17,7 +17,7 @@ export const Blocks = () => {
   const [CSS, setCSS] = React.useState<string>('');
 
   const handleChange = (value: string | undefined) => {
-    if (!value) {
+    if (value === undefined) {
       return;
     }
 

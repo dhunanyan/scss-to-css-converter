@@ -28,5 +28,11 @@ export const siteContent = {
     copyButtonLabel: 'Copy CSS',
     downloadButtonLabel: 'Download CSS',
     downloadFileName: 'converted.css',
+    dropHintMessage: 'Drag & drop a .scss file here to load it instantly.',
+    dropPendingMessage: 'File accepted. Waiting for editor to finish loading...',
+    dropSuccessMessage: 'SCSS file loaded successfully.',
+    dropNoFileMessage: 'No file detected. Please drop a .scss file.',
+    dropInvalidTypeMessage: 'Invalid file type. Please drop a .scss file only.',
+    dropReadErrorMessage: 'Failed to read the dropped file. Please try again.',
   },
 } as const;

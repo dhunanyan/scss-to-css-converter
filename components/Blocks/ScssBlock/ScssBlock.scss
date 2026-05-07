@@ -19,8 +19,8 @@
   }
 
   &__title {
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 500;
     padding: 2px;
 
     @media screen and (min-width: 768px) {
@@ -29,8 +29,9 @@
   }
 
   &__editor {
-    height: 400px;
     background-color: $primary-color;
+    height: 400px;
+    position: relative;
 
     * {
       text-wrap: wrap !important;
@@ -51,6 +52,56 @@
 
     .view-lines {
       border-color: $tint-color-1 !important;
+    }
+  }
+
+  &__global-overlay {
+    background: rgba(1, 22, 39, 0.55);
+    inset: 0;
+    pointer-events: none;
+    position: fixed;
+    z-index: 9998;
+  }
+
+  &__global-target {
+    border: 2px dashed rgba(86, 156, 214, 0.95);
+    border-radius: 8px;
+    box-shadow:
+      0 0 0 9999px rgba(1, 22, 39, 0.55),
+      0 0 0 4px rgba(86, 156, 214, 0.2),
+      0 0 20px rgba(86, 156, 214, 0.35);
+    pointer-events: none;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  &__toast {
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    color: #f5fbff;
+    font-family: $font-mono;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    max-width: min(90vw, 420px);
+    padding: 10px 12px;
+    position: fixed;
+    right: 14px;
+    top: 14px;
+    z-index: 10010;
+
+    &--info {
+      background: rgba(12, 38, 58, 0.94);
+      border: 1px solid rgba(86, 156, 214, 0.85);
+    }
+
+    &--success {
+      background: rgba(11, 58, 38, 0.94);
+      border: 1px solid rgba(75, 199, 140, 0.85);
+    }
+
+    &--error {
+      background: rgba(68, 22, 33, 0.96);
+      border: 1px solid rgba(234, 67, 150, 0.9);
     }
   }
 }
